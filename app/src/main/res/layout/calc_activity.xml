@@ -14,8 +14,10 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
+        android:hint="@string/hint"
         android:inputType="textPersonName|numberDecimal"
         android:selectAllOnFocus="true"
+        android:textSize="@dimen/text_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,8 +28,10 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="15%"
+        android:textSize="@dimen/text_size"
         app:layout_constraintEnd_toStartOf="@+id/sb_percent"
-        app:layout_constraintTop_toBottomOf="@+id/et_amount" />
+        app:layout_constraintTop_toBottomOf="@+id/et_amount"
+        tools:text="@string/text_15percent" />
 
     <SeekBar
         android:id="@+id/sb_percent"
@@ -35,6 +39,7 @@
         android:layout_height="26dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:progress="@integer/progress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_amount" />
 
@@ -44,6 +49,8 @@
         android:layout_height="26dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:text="@string/text_Tip"
+        android:textSize="@dimen/text_size"
         app:layout_constraintEnd_toStartOf="@+id/tv_tip"
         app:layout_constraintTop_toBottomOf="@+id/tv_percent" />
 
@@ -54,6 +61,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="TextView"
+        android:textSize="@dimen/text_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_tip" />
 
@@ -64,8 +72,10 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="Total"
+        android:textSize="@dimen/text_size"
         app:layout_constraintEnd_toStartOf="@+id/tv_total"
-        app:layout_constraintTop_toBottomOf="@+id/tv_label_tip" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_tip"
+        tools:text="@string/text_Total" />
 
     <TextView
         android:id="@+id/tv_tip"
@@ -74,6 +84,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="TextView"
+        android:textSize="@dimen/text_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sb_percent" />
 
