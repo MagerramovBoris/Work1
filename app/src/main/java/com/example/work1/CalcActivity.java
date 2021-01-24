@@ -14,7 +14,7 @@ import java.text.NumberFormat;
 public class CalcActivity extends AppCompatActivity {
 
     // Форматирование денежных сумм и процентов
-    private static final NumberFormat currencyFormat= NumberFormat.getCurrencyInstance();
+    private static final NumberFormat currencyFormat = NumberFormat.getCurrencyInstance();
     private static final NumberFormat percentFormat = NumberFormat.getPercentInstance();
 
 
